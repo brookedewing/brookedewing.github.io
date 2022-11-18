@@ -27,7 +27,7 @@
     display: inline-block;
     width: auto;
     list-style-type: none;
-    transition: background-color 0.75s color 0.75s;;
+    transition: background-color 0.75s color 0.75s;
     border-radius: 7px;
     text-transform: uppercase;
     text-align: center;
@@ -53,7 +53,7 @@
     height: 300px; 
     width: 100%;
     min-width: 800px;
-    position: relative;
+    /* position: relative; */
   }
   
   #banner h1 {
@@ -69,7 +69,6 @@
     position: relative;
     top: 96px;
     left: 635px;
-  ;
   }
   
   main {
@@ -86,7 +85,7 @@
   
   h2,
   h3 {
-    padding-left: 25px;
+    padding: 0 150px;
     margin: 15px 0px;
   }
   
@@ -111,12 +110,12 @@
     color: #000;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
-    padding-left: 35px;
     margin: 15px 0px;
+    padding: 0 150px;
   }
   
   figcaption {
-    padding-left: 45px;
+    padding-left: 175px;
   }
   
   img {
