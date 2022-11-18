@@ -87,7 +87,7 @@ h1 {
 
 h2,
 h3 {
-  padding-left: 25px;
+  padding: 0 150px;
   margin: 15px 0px;
 }
 
@@ -112,7 +112,7 @@ ul {
   color: #000;
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
-  padding-left: 35px;
+  padding: 0 150px;
   margin: 15px 0px;
 }
 
@@ -138,6 +138,7 @@ a:hover {
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   font-weight: 600;
+  padding: 0 150px;
 }
 
 .caption {
@@ -146,6 +147,7 @@ a:hover {
   font-family: 'Montserrat', sans-serif;
   font-size: 15px;
   letter-spacing: 1px;
+  padding: 0 150px;
 }
 
 
@@ -165,5 +167,5 @@ a[href*='linkedin'] {
 }
 
 .left-image {
-  margin-left: 40px;
+  margin-left: 150px;
 }
