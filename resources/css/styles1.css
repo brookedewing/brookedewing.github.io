@@ -12,7 +12,7 @@
 
 .banner h1 {
     font-family: 'Abril Fatface', cursive;
-    font-weight: 500;
+    /* font-weight: 500; */
     color: #DA9A1Ce6;
     font-size: 93px;
     text-align: center;
@@ -182,3 +182,24 @@ footer {
     background-color: #DCE4E3;
     position: relative;
   }
+
+nav {
+  font-weight: 700;
+  letter-spacing: 4px;
+  margin: 20px;
+  padding: 10px;
+  /* background-color: #E3A039; */
+  width: 200px;
+  min-width: 19em;
+  /* border-bottom: 1px solid #B27D2C;
+  border-top: 1px solid #B27D2C; */
+  border-radius: 7px;;
+  /* position: sticky; */
+  top: 0px;
+  z-index: 10;
+}
+
+nav:hover {
+  color: black;
+  background-color: #EBA832;
+}
