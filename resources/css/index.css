@@ -22,6 +22,7 @@
   background-color: #E3A039;
   border-bottom: 1px solid #B27D2C;
   border-top: 1px solid #B27D2C;
+  overflow-x :hidden;
 }
   
 #nav#logocont {
@@ -80,9 +81,9 @@ img#logo {
   background-size: cover;
   height: 300px;
   width: 100%;
-  /* align-content: center; */
   padding: 7%;
   flex-wrap: wrap;
+  overflow-x :hidden;
 }
   
 #banner h1 {
@@ -96,6 +97,7 @@ img#logo {
   text-align: center;
   width: 50%;
   height: 130px;
+  padding: 10px;
   /* flex: 1 1 650px; */
 }
   
