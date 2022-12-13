@@ -3,38 +3,45 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    border: 1px solid blue;
   }
 
 #nav {
-  background-color: #E3A039;
-  border-bottom: 1px solid #B27D2C;
-  border-top: 1px solid #B27D2C;
   display: inline-flex;
-  height: 150px;
+  justify-content:space-around;
+  align-items: center;
+  /* height: 150px; */
   width: 100%;
   position: sticky;
   top: 0px;
   z-index: 10;
   margin: 15px 0;
-  padding: 20px 20px 20px 0;
-  }
+  /* padding: 20px 20px 20px 0; */
+  flex-wrap: wrap;
+  align-content:center;
+  background-color: #E3A039;
+  border-bottom: 1px solid #B27D2C;
+  border-top: 1px solid #B27D2C;
+}
   
-#logocont {
-  display: inline-flex;
-  width: 20%;
-  align-content:flex-start;
+#nav#logocont {
+  width: 15%;
 }  
 
 img#logo {
   border-radius: 75px;
+  flex: 1 1;
 }
-  
-#menuitems a{
-  padding: 25px;
-  margin: 20px 5px;
-  min-width: 19em;
-  border-radius: 7px;
-  align-content:flex-start;
+
+#menuitems {
+  width: 70%;
+  display: inline-flex;
+}
+
+#menuitems li {
+  display: inline-block;
+  /* margin: 20px 5px; */
+  /* min-width: 19em; */
   text-align: center;
   color: #f5f5f5;
   font-family: 'Montserrat', sans-serif;
@@ -42,9 +49,14 @@ img#logo {
   letter-spacing: 4px;
   text-transform: uppercase;
   transition: background-color 0.75s color 0.75s;
+  flex: 1 1;
+  list-style: none;
 }
   
- 
+#menuitems li a {
+  padding: 10px;
+  border-radius: 7px;
+}
 #menuitems a:hover {
   color: black;
   background-color: #D19537;
@@ -54,19 +66,22 @@ img#logo {
   color: f5f5f5;
   background-color: #aa6f10;
 }
+
+#TBD {
+  width: 15%;
+}
   
 #banner {
+  display: inline-flex;
+  justify-content:right;
   background-image: url('../Images/June\ 2022\ Desktop\ Wallpaper.png');
   background-attachment: fixed;
   background-size: cover;
   height: 300px;
   width: 100%;
-  min-width: 800px;
-  /* position: relative; */
-  display: inline-flex;
-  justify-content:right;
   /* align-content: center; */
   padding: 7%;
+  flex-wrap: wrap;
 }
   
 #banner h1 {
@@ -78,25 +93,13 @@ img#logo {
   font-size: 70px;
   font-weight: 500;
   text-align: center;
-  width: 650px;
+  width: 45%;
   height: 130px;
-  /* position: relative;
-  top: 96px;
-  left: 635px; */
-
-}
-  
-h1 {
-  padding: 15px 10px;
-  font-family: 'Dancing Script', cursive;
-  font-size: 65px;
-  font-weight: 500;
-  text-align: center;
+  /* flex: 1 1 650px; */
 }
   
 h2,
 h3 {
-  /* padding: 0 150px; */
   margin: 15px 65px;
 }
   
