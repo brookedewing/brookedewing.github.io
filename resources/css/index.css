@@ -69,7 +69,7 @@ img#logo {
 }
 
 #TBD {
-  width: 15%;
+  width: auto;
 }
   
 #banner {
@@ -139,9 +139,16 @@ figcaption {
   margin-left: 80px;
 }
 
-img {
+.images {
+  display: flex;
+  flex-direction: column;
   margin-left: 65px;
+}
+
+.images img {
+
   border-radius: 15px;
+  max-width: 450px;
 }
 
 a {
@@ -158,7 +165,7 @@ a:hover {
   font-family: 'Montserrat', sans-serif;
   font-size: 19px;
   font-weight: 600;
-  margin: 0 65px;
+  margin: 0 0;
 }
 
 .caption {
