@@ -91,6 +91,8 @@ a {
     border-radius: 7px; */
     width: 830px;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
  }
 
 .colors {
