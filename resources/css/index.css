@@ -11,14 +11,15 @@
     /* opacity: 0.9; */
   }
   
-  nav {
-    display: inline-block;
+  #nav {
+    display: flex;
     font-weight: 700;
     letter-spacing: 4px;
     margin: 15px auto 20px auto;
     background-color: #E3A039;
     width: 100%;
     min-width: 19em;
+    max-height: 150px;
     border-bottom: 1px solid #B27D2C;
     border-top: 1px solid #B27D2C;
     position: sticky;
