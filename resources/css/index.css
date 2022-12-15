@@ -50,17 +50,18 @@ img#logo {
 #menuitems li a {
   display: inline-flex;
   flex: 0 0 50px;
-  margin: 0 5px;
+  margin: 0 3px;
   /* min-width: 100px; */
   text-align: center;
   color: #f5f5f5;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
+  font-size: 16px;
   letter-spacing: 4px;
   text-transform: uppercase;
   transition: background-color 0.75s color 0.75s;
   list-style: none;
-  padding: 10px;
+  padding: 8px;
   border-radius: 7px;
 }
   
