@@ -3,7 +3,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
     overflow-x:hidden;
   }
 
@@ -109,11 +109,17 @@ img#logo {
   padding: 10px;
   /* flex: 1 1 650px; */
 }
+
+.mainbody {
+  display: flex;
+  flex-direction: column;
+  margin: 0 5%;
+}
   
-h2,
+/* h2,
 h3 {
   margin: 15px 65px;
-}
+} */
   
   
 .title2 {
@@ -139,25 +145,24 @@ p {
   /* padding: 0 150px; */
 }
 
-ul {
+/* ul {
   color: #000;
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   margin: 0px 0px;
-}
+} */
 
-figcaption {
+/* figcaption {
   margin-left: 80px;
-}
+} */
 
-.images {
+/* .images {
   display: flex;
   flex-direction: column;
   margin-left: 65px;
-}
+} */
 
 .images img {
-
   border-radius: 15px;
   max-width: 450px;
 }
@@ -185,7 +190,7 @@ a:hover {
   font-family: 'Montserrat', sans-serif;
   font-size: 15px;
   letter-spacing: 1px;
-  margin: 0 65px;
+  /* margin: 0 65px; */
 }
 
 
