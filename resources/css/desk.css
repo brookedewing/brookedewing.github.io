@@ -123,19 +123,18 @@ img#logo {
 h2,
 h3 {
   font-family: 'Comfortaa', cursive;
+  padding: 10px 0;
 }
 
 .title2 {
   color: #748371;
   font-size: 50px;
-  padding-top: 15px;
   font-weight: 400;
 }
 
 .title3 {
   color: #748371;
   font-size: 22px;
-  padding-bottom: 7px;
 }
 
 p {
@@ -154,7 +153,7 @@ p {
 
 img {
   border-radius: 7px;
-  margin-right: 5px;
+  margin: 5px 5px 5px 0;
 }
 
 figure {
