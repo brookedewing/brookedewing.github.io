@@ -9,7 +9,7 @@
 
 #nav {
   display: inline-flex;
-  justify-content:space-between;
+  justify-content:left;
   align-items: center;
   width: 100%;
   position: sticky;
@@ -85,7 +85,7 @@ img#logo {
   align-items: center;
   background-image: url('../Images/Sunflower.png'); 
   background-attachment: fixed;
-  background-size: 75%;
+  background-size: 85%;
   /* height: 300px;  */
   width: 100%;
   padding: 7%;
@@ -103,18 +103,24 @@ img#logo {
   font-size: 65px;
   font-weight: 500;
   text-align: center;
-  min-width: 500px;
-  max-width: 800px;
+  width: 800px;
+  min-width: 400px;
 }
 
-main {
-  position: relative;
+.mainbody {
+  display: flex;
+  /* flex-direction: column; */
+  margin: 0 5%;
 }
+
+/* main {
+  position: relative;
+} */
 
 h2,
 h3 {
   font-family: 'Comfortaa', cursive;
-  padding: 0 150px;
+  /* padding: 0 150px; */
   margin: 15px 0px;
 }
 
@@ -137,18 +143,18 @@ ul {
   color: #000;
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
-  padding: 0 150px;
-  margin: 15px 0px;
+  /* padding: 0 150px; */
+  /* margin: 15px 0px; */
 }
 
-figcaption {
+/* figcaption {
   padding-left: 45px;
-}
+} */
 
-img {
+/* img {
   margin-left: 40px;
   border-radius: 15px;
-}
+} */
 
 a {
   color: #748371;
@@ -158,12 +164,12 @@ a:hover {
   color: #F7FFFF;
 }
 
-.imghead {
+/* .imghead {
   color: #748371;
   font-family: 'Comfortaa', cursive;
   font-size: 20px;
   font-weight: 600;
-}
+} */
 
 .caption {
   color: #748371;
@@ -171,7 +177,7 @@ a:hover {
   font-family: 'Poppins', sans-serif;
   font-size: 15px;
   letter-spacing: 1px;
-  padding: 0 150px;
+  /* padding: 0 150px; */
 }
 
 
@@ -183,6 +189,7 @@ footer {
   border-top: 1px solid #B6BCBB;
   background-color: #DCE4E3;
   position: relative;
+  margin-top: 25px;
 }
 
 a[href*='linkedin'] {
@@ -190,6 +197,6 @@ a[href*='linkedin'] {
   font-weight: bold;
 }
 
-.left-image {
+/* .left-image {
   margin-left: 150px;
-}
+} */
