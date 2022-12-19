@@ -45,6 +45,7 @@ img#logo {
 
 #menuitems ul {
   display: flex;
+  flex-wrap: wrap;
   margin: 0 5px;
 }
 
@@ -117,7 +118,7 @@ img#logo {
 
 .mainbody {
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
   margin: 0 5%;
 }
 
