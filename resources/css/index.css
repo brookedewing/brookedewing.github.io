@@ -3,10 +3,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    border-top: 1px solid blue;
+    /* border-top: 1px solid blue;
     border-bottom: 1px solid red;
     border-left: 1px solid pink;
-    border-right: 1px solid greenyellow;
+    border-right: 1px solid greenyellow; */
     overflow-x:hidden;
   }
 
@@ -37,7 +37,7 @@ img#logo {
 }
 
 #menuitems {
-  width: 70%;
+  width: 77%;
   display: flex;
   flex-wrap: wrap;
   justify-content:end;
@@ -63,7 +63,7 @@ img#logo {
   color: #f5f5f5;
   font-family: ' Poppins', sans-serif;
   font-weight: 700;
-  font-size: 16px;
+  font-size:calc(12px+1vw);
   letter-spacing: 4px;
   text-transform: uppercase;
   transition: background-color 0.75s color 0.75s;
@@ -84,7 +84,7 @@ img#logo {
 }
 
 #TBD {
-  width: 10%;
+  width: 7%;
   text-align: center;
 }
 
@@ -150,7 +150,7 @@ h2, h3 {
 p {
   color: #000;
   font-family: 'poppins', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   padding: 7px 0;
 }
 
@@ -224,13 +224,8 @@ footer {
   padding: 25px 5px;
   border-top: 1px solid #B6BCBB;
   background-color: #DCE4E3;
-  /* position: relative; */
+  position: relative;
   margin-top: 25px;
-}
-
-#footSandK img {
-  /* border-radius: 75px; */
-  /* margin: 5px 10px; */
 }
 
 a[href*='linkedin'] {
