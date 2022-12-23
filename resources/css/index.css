@@ -8,6 +8,7 @@
     border-left: 1px solid pink;
     border-right: 1px solid greenyellow; */
     overflow-x:hidden;
+    overflow-y: visible;
   }
 
 #nav {
@@ -163,9 +164,11 @@ p {
 .mainbody {
   display:grid;
   width: 90%;
-  /* height: 700px; */
-  grid-template: 25% 75% / 60% 1fr 1fr;
+  gap: 10px 10px;
+  grid-template: 25% 1fr / 2fr 1fr;
   margin: 0 10% 0 10%;
+
+  /* border: 1px solid #629D57; */
 }
 
 .mainbody h2{
@@ -179,15 +182,16 @@ p {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 2;
-  grid-row-end: 3;
+  /* grid-row-end: 3; */
 }
 
 .mainbody figure {
   grid-column-start: 2;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 3;
-  padding: 25px;
+  grid-column-end: 3;
+  grid-row: 1 / span 2;
+    /* padding: 25px; */
+  width: fit-content;
+  height: fit-content;
 }
 
 img {
