@@ -65,7 +65,6 @@ img#logo {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size:calc(16px + (20 - 16) * ((100vw - 300px) / (1600-300)));
-  /* letter-spacing: 0.2em; */
   text-transform: uppercase;
   transition: background-color 0.75s color 0.75s;
   list-style: none;
@@ -165,7 +164,7 @@ p {
 .mainbody {
   display:grid;
   justify-self: center;
-  width: 90%;
+  /* width: 90%; */
   /* height: 600px; */
   gap: 10px 10px;
   grid-template: 95px 161.219px 1fr / 2fr 200px 200px;
