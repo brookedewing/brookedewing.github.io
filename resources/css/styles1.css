@@ -91,10 +91,9 @@
     
 
 .banner {
-    background-image: url(../images/bckgrnd_green4.png) !important;
+    background-image: url(../images/bckgrnd_green4.png);
     background-size: cover;
-    height: 275px;
-    /* opacity: 80%; */
+    height: auto;
 }
 
 .banner h1 {
