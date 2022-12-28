@@ -5,16 +5,103 @@
     padding: 0;
   }
 
+  #nav {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content:left;
+    align-items: center;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    margin: 15px 0;
+    align-content:center;
+    background-color: #34495E;
+    border-bottom: 1px solid #162029;
+    border-top: 1px solid #162029;
+  }
+    
+  #nav#logocont {
+    width: 15%;
+    min-height: 95px;
+  }  
+  
+  img#logo {
+    border-radius: 75px;
+    margin: 5px 10px;
+  }
+  
+  #menuitems {
+    width: 77%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:end;
+    min-width: 350px;
+  }
+  
+  #menuitems ul {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: 0 5px;
+  }
+  
+  #menuitems li {
+    width: auto;
+    list-style-type:none;
+  }
+  
+  #menuitems li a {
+    display: inline-flex;
+    flex-wrap: wrap;
+    /* margin: 0 3px; */
+    text-align: center;
+    color: #f5f5f5;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size:calc(16px + (20 - 16) * ((100vw - 300px) / (1600-300)));
+    text-transform: uppercase;
+    transition: background-color 0.75s color 0.75s;
+    padding: 12px 15px;
+    text-decoration: none;
+    /* border-left: 0.5px solid whitesmoke;
+    border-right: 0.5px solid whitesmoke; */
+  }
+ 
+  #menuitems a:hover {
+    color: #d6d5d5;
+    background-color: #577a9c;
+    border-radius: 7px;
+    border: none;
+  }
+  
+  #menuitems a:active {
+    color: #577a9c;
+    background-color: #85a5c5;
+    border-radius: 7px;
+  }
+  
+  #TBD {
+    width: 8%;
+    text-align: center;
+  }
+  
+  #TBD p {
+    color: #f5f5f5;
+  }
+    
+
 .banner {
-    background-image: url(../images/headerbckgrndplants.png) !important;
+    background-image: url(../images/bckgrnd_green4.png) !important;
     background-size: cover;
+    height: 275px;
+    /* opacity: 80%; */
 }
 
 .banner h1 {
     font-family: 'Abril Fatface', cursive;
     /* font-weight: 500; */
-    color: #DA9A1Ce6;
-    font-size: 93px;
+    color: #B27D2C;
+    font-size:calc(32px + (75 - 32) * ((100vw - 300px) / (1600-300)));
     text-align: center;
     padding-top: 55px;
     padding-bottom: 10px;
@@ -22,11 +109,11 @@
 
 .banner h2 {
     font-family: 'Sacramento', cursive;
-    color: #FFFFFFd4;
-    font-weight: 200;
-    font-size: 63px;
+    font-size:calc(34px + (52 - 34) * ((100vw - 300px) / (1600-300)));
+    font-weight: 400;
     text-align: center;
     padding-bottom: 55px;
+    color: #dddbdb;
 }
 
 main {
@@ -176,30 +263,9 @@ emphasis {
 footer {
     opacity: 0.75;
     text-align: center;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding: 25px 5px;
     border-top: 1px solid #B6BCBB;
     background-color: #DCE4E3;
     position: relative;
+    margin-top: 25px;
   }
-
-nav {
-  font-weight: 700;
-  letter-spacing: 4px;
-  margin: 20px;
-  padding: 10px;
-  /* background-color: #E3A039; */
-  width: 200px;
-  min-width: 19em;
-  /* border-bottom: 1px solid #B27D2C;
-  border-top: 1px solid #B27D2C; */
-  border-radius: 7px;;
-  /* position: sticky; */
-  top: 0px;
-  z-index: 10;
-}
-
-nav:hover {
-  color: black;
-  background-color: #EBA832;
-}
