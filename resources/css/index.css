@@ -53,6 +53,7 @@ img#logo {
 
 #menuitems li {
   width: auto;
+  list-style: none;
 }
 
 #menuitems li a {
@@ -66,7 +67,6 @@ img#logo {
   font-size:calc(16px + (20 - 16) * ((100vw - 300px) / (1600-300)));
   text-transform: uppercase;
   transition: background-color 0.75s color 0.75s;
-  list-style: none;
   padding: 12px 15px;
   text-decoration: none;
   /* border-left: 0.5px solid whitesmoke;
@@ -139,7 +139,7 @@ img#logo {
 }
   
 .title3 {
-  color: #1E2935;
+  color: #6F7E6E;
   font-family: 'Dancing Script', cursive;
   font-size:calc(30px + (40 - 30) * ((100vw - 300px) / (1600-300)));
   padding-bottom: 7px;

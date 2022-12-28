@@ -123,12 +123,17 @@
     padding: 0 0 2% 4%;
 }
 
+#h1 h1 {
+    font-family: 'Abril Fatface', cursive;
+    font-size:calc(32px + (55 - 32) * ((100vw - 300px) / (1600-300)));
+    letter-spacing: 0.15em;
+}
+
 #h1alt {
     font-family: 'Dancing Script', cursive;
     font-size:calc(55px + (75 - 55) * ((100vw - 300px) / (1600-300)));
     font-weight: 500;
 }
-
 
 h2 {
     font-family: 'Comfortaa', cursive;
