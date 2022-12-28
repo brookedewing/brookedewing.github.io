@@ -157,7 +157,8 @@ p {
   grid-template-columns: 2fr 1fr;
   gap: 16px;
   margin: 0 5%;
-  /* border: 2px solid red; */
+  position: relative;
+    /* border: 2px solid red; */
 }
 
 .maintext {
