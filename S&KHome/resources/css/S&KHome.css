@@ -106,7 +106,7 @@ img#logo {
 #banner {
   display: grid;
   grid-template: 1fr/1fr 1fr;
-  background-image: url('../Images/washbd.jpg'); 
+  background-image: url('../images/washbd.jpg'); 
   background-attachment: fixed;
   background-size:cover;
   background-position: bottom;
