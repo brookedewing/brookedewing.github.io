@@ -133,8 +133,42 @@ img#logo {
 }
 
 @media only screen and (max-width: 500px) {
+  #nav {
+    background-color: #fff;
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+  }
+  
   #banner {
     display: none;
+  }
+
+  #logocont {
+    display: none;
+  }
+
+  #mobilelogo {
+    border-radius: 0%;
+    width: 100%;
+    height: auto;
+  }
+
+  #TBD {
+    display: none;
+  }
+
+  #menuitems {
+    width: 100%;
+  }
+
+  #menuitems li {
+    padding: 2px;
+  }
+
+  #menuitems li a {
+    color: #585858;
+    padding: 4px 12px;
+    justify-items: center;
   }
 }
   
