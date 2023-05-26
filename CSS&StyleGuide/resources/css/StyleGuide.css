@@ -92,7 +92,7 @@
 #banner {
     text-align: center;
     padding: 20px 0;
-    background-image: url("../Images/cbbdorig.jpg");
+    background-image: url("../images/cbbdorig.jpg");
     background-size:cover;
     height: 360px;
     display: inline-flex;
