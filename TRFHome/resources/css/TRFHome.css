@@ -130,13 +130,29 @@ img#logo {
   min-width: 315px;
   height: auto;
   align-content: center;
+  padding: 25px 10px;
 }
 
 #mobilelogo {
   display: none;
 }
 
-@media only screen and (max-width: 500px) {
+#tabletlogo {
+  display: none;
+}
+
+@media only screen and (max-width: 1040px)  {
+  #banner {
+    grid-template: 1fr/1fr;
+  }
+
+  #banner h1 {
+    grid-area: 1/1/2/2;
+    padding: 25px;
+}
+}
+
+@media only screen and (max-width: 785px) {
   #nav {
     background-color: #fff;
     border-bottom: 1px solid #fff;
@@ -151,11 +167,12 @@ img#logo {
     display: none;
   }
 
-  #mobilelogo {
+  #tabletlogo {
     display: block;
     border-radius: 0%;
     width: 100%;
     height: auto;
+    margin: 5px 0;
   }
 
   #TBD {
@@ -176,7 +193,21 @@ img#logo {
     justify-items: center;
   }
 }
+
+@media only screen and (max-width: 450px) {
+  #tabletlogo {
+    display: none;
+  }
   
+  #mobilelogo {
+    display: block;
+    border-radius: 0%;
+    width: 100%;
+    height: auto;
+    margin: 5px 0;
+  }
+}
+
 .title2 {
   color: #B27D2C;
   font-family: 'quicksand', sans-serif;
@@ -278,6 +309,8 @@ img {
   border-radius: 15px;
   min-width: 20px;
 }
+
+
 
 @media only screen and (max-width: 940px)  {
   .body {
