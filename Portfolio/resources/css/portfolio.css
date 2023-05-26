@@ -56,7 +56,7 @@ html {
   width: 100%;
   /* position: sticky; */
   /* z-index: 10; */
-  background-image: url('../Images/washlakebd.jpg');
+  background-image: url('../images/washlakebd.jpg');
   background-attachment:fixed;
   background-size:cover;
   background-position:bottom;
