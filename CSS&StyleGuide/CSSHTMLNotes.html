@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comfortaa:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;1,100;1,200;1,400;1,500;1,600;1,700&family=Sacramento&display=swap" rel="stylesheet">
+    <link href="./resources/css/CSSHTMLNotes.css" rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS & HTML - Notes</title>
+</head>
+<nav id="nav">
+    <div id="logocont">
+      <a href="../S&KHome/S&KHome.html"><img id="logo" src="./resources/Images/TEST LOGO_3_12.15.22 s&k.png" alt="" height="95px"></a>
+    </div>
+    <div id="TBD">
+      <P>|||</P>
+    </div>
+    <div id="menuitems">
+      <ul>
+        <li><a href='../S&KHome/S&KHome.html'>Home Page</a></li>
+        <li><a href='../Desk/desk.html'>Vintage Desk Makeover</a></li>
+        <li><a href="../CSS&StyleGuide/StyleGuide.html">Style Guide</a></li>
+      </ul>
+    </div>
+  </nav>
+<body>
+  <!-- banner section -->
+  <section id="banner">
+    <div class="title">
+      <h1>CSS and HTML</h1>
+      <h2>A Few Quick Notes</h2>
+    </div>
+  </section>
+    
+  <main>
+  <!-- color section -->
+    <h3>CSS <span class="gradient">Color</span> Formatting</h3>
+    <p>Color is a very important factor in making beautiful websites. Below is a quick overview of some of the options you can use for coding colors on your own webpage! Also, <a href='https://htmlcolorcodes.com/' target="_blank">here</a> is a great website to reference when trying to decide what colors you want to use! (<emphasis>Warning:</emphasis> when using this website, I had trouble with HSL values showing incorrectly and wound up using a separate converter, so keep that in mind if using this format).</p>
+    <table class="maintable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>CSS Input</th>
+                <th>Color Output</th>
+                <th>Notes</th>
+            </tr>
+        </thead>
+        <tbody>
+             <!-- Named Colors Section -->
+             <tr>
+                <td>Named Colors</td>
+                <td>background-color: purple;</td>
+                <td class="namecolout"></td>
+                <td>The benefit of this format is that it is a very simple way to start using colors! There are around 140 options to choose from and most text editors will autofill as you begin to type a color. However, the simplicity can also be a drawback as it limits the creative choices you have. </td>
+            </tr>
+
+            <!-- Hexadecimal Section -->
+            <tr>
+                <td>Hex (Hexadecimal) Codes</td>
+                <td>background-color: #8DDED1;</td>
+                <td class="hexout"></td>
+                <td>This format utlizes a base 16 system instead of base 10 and uses letters A-F to represent the additional values. The format is a hash sign followed by six digits (each pair representing red, green and blue in that order). 00 is the darkest version of the color (closest to black) and FF is the lightest version (closest to white). If the pairs are repeating values, it can be represented as a three digit number instead (e.g. #00FF00 becomes #0F0). I've created a sheet in Excel to better show the conversion from decimal to hex and have linked that <a href='./resources/MISC_RGB Converter_Dec to Hex.xlsx'>here</a></td>
+            </tr>
+
+        
+            <!-- RGB Section -->
+            <tr>
+                <td>RGB (red, green, blue)</td>
+                <td>background-color: rgb(65, 130, 15);</td>
+                <td class="rgbout"></td>
+                <td>Each color is represented by a decimal between 0-255, with 0 being the closest to black and 255 the closest to white NEED TO ADD NOTES</td>
+            </tr>
+
+            <!-- HSL Section -->
+            <tr>
+                <td>HSL (Hue, Saturation, Lightness)</td>
+                <td>background-color: hsl(17, 91%, 65%);</td>
+                <td class="hslout"></td>
+                <td>HSL stands for hue (the color itself), saturation (the intensity of the color), and lightness (how light or dark a color is). Hue ranges from 0 to 360 and saturation and lightness are both represented as percentages (<emphasis>NOTE:</emphasis> this explanation was taken directly from Codecademy - Nov 2022)</td>
+            </tr>
+            
+        </tbody>
+
+
+    </table>
+    <h4>One Color in Each Format</h4>
+    <p>Since I used different colors in my examples above, here is a quick snapshot of the same color <span class="examplegreen">green</span> represented by the different formats. I am not including the named color format as this color is not an option (or if it is, I don't know the name!). For those of you curious, I've included separate classes and inputs for each in my CSS stylesheet so you can see how that works to create the same output.</p>    
+    <table>
+        <thead>
+            <tr>
+                <th>Color Format</th>
+                <th>CSS Input</th>
+                <th>Color Output</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Hex</td>
+                <td>background-color: #95DD8D;</td>
+                <td class="hexout2"></td>
+            </tr>
+            <tr>
+                <td>RGB</td>
+                <td>background-color: rgb(149, 221, 141);</td>
+                <td class="rgbout2"></td>
+            </tr>
+            <tr>
+                <td>HSL</td>
+                <td>background-color: hsl(114, 54%, 71%);</td>
+                <td class="hslout2"></td>
+            </tr>
+        </tbody>
+
+    </table>
+
+    <h4>Alpha Value</h4>
+      <p>Another way to format your color is by changing the transparency - this can be done using the alpha value. See the table below for examples on how to include this value. Each of these are shown at 75% opacity as compared to the colors above.</p>
+      <table class="alphatable">
+        <thead>
+            <tr>
+                <th>Color Format</th>
+                <th>How to Add Alpha</th>
+                <th>CSS Input</th>
+                <th>Color Output</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Named Colors</td>
+                <td>This format just utilizes another tag "Opacity" where you can set the value between 0 and 1 (0 being transparent and 1 being opaque)</td>
+                <td>background-color: purple;<br>opacity: 0.75;</td>
+                <td class="namealpha"></td>
+            </tr>
+            <tr>
+                <td>Hex</td>
+                <td>Two digits added to end of string - NEED TO ADD NOTES</td>
+                <td>background-color: #8DDED1BF;</td>
+                <td class="hexalpha"></td>
+            </tr>
+            <tr>
+                <td>RGB</td>
+                <td>Using rgba instead of rgb, add the alpha value at the end of the string either in decimal form (0 being fully transparent and 1.0 being fully opaque) or as a percentage (0%-100%).</td>
+                <td>background-color: rgba(65, 130, 15, 0.75);</td>
+                <td class="rgbalpha"></td>
+            </tr>
+            <tr>
+                <td>HSL</td>
+                <td>NEED TO ADD NOTES</td>
+                <td>background-color: hsla(17, 91%, 65%, 75%);</td>
+                <td class="hslalpha"></td>
+            </tr>
+        </tbody>
+
+    </table>
+
+
+
+  </main> 
+  <footer>
+    <p class='foot'>You can learn more about me <a href="../Portfolio/portfolio-alt.html" target=_blank>here</a> or contact me at ducky@gibberish.com!</p>
+    <div id="footSandK">
+      <a href="../S&KHome/S&KHome.html"><img id="logo" src="./resources/Images/TEST LOGO_4_12.15.22 s&k.png" alt="" height="85px"></a>
+    </div>
+  </footer>
+</body>
+</html>

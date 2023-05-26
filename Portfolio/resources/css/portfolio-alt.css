@@ -1,0 +1,245 @@
+/*this resets the browser defaults!*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x:hidden;
+  overflow-y: visible;
+  /* border-top: 1px solid blue;
+  border-bottom: 1px solid red;
+  border-left: 1px solid pink;
+  border-right: 1px solid greenyellow; */
+  /* border: 1px solid red; */
+}
+
+html {
+  font-size: 16px;
+}
+
+@keyframes fadein {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadein {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadein {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+#banner {
+  display: grid;
+  grid-template: 6rem 3fr repeat(5,1fr) 4rem/1fr 1fr;
+  width: 100%;
+  /* background-color: #30362f; */
+  /* justify-content: space-around; */
+  align-content: space-around;
+  /* gap: 1rem; */
+}
+
+#nav {
+  grid-area: 1/1/9/3;
+  width: 100%;
+  /* position: sticky; */
+  /* z-index: 10; */
+  background-image: url('../Images/washbd.jpg');
+  background-attachment:fixed;
+  background-size:cover;
+  background-position:bottom;
+  /* height: 58rem; */
+  }
+
+#menuitems {
+  animation: fadein 6s;
+  -webkit-animation: fadein 6s;
+  -moz-animation: fadein 6s;
+  -o-animation: fadein 6s;
+  -ms-animation: fadein 6s;
+  grid-area: 1/1/2/3;
+  justify-self: end;
+  padding: 1rem 0;
+  margin-right: 5%;
+}
+
+#menuitems a {
+  color: #30362f;
+  font-family: 'Quicksand', sans-serif;
+  /* font-weight: 300; */
+  letter-spacing: .01rem;
+  font-size:calc(1.15rem + (2 - 1.15) * ((100vw - 300px) / (1600-300)));
+  transition: background-color 0.75s color 0.75s;
+  padding: 0.5rem 0.65rem;
+  text-decoration: none;
+  text-align: right;
+  font-weight: 500;
+  background-color: #f5f5f573;
+} 
+ 
+#menuitems a:hover {
+  color: #f5f5f5;
+  background-color: #30362fd9;
+  /* border-radius: 0.5rem; */
+  border: none;
+}
+  
+#menuitems a:active {
+  color: #30362f73;
+  background-color: #f5f5f5d9;
+  /* border-radius: 0.5rem; */
+}
+
+.darkgreen {
+  animation: fadein 6s;
+  -webkit-animation: fadein 6s;
+  -moz-animation: fadein 6s;
+  -o-animation: fadein 6s;
+  -ms-animation: fadein 6s;
+  grid-area: 2/1/3/3;
+  display: grid;
+  grid-template: 1fr / 1.25fr 1fr;
+  background-color: #30362fd9;
+  /* margin-bottom: 0.25rem; */
+  margin-left: 5%;
+  margin-right: 5%;
+  align-items: center;
+}
+
+#title {
+  grid-area: 1/1/2/2;
+  display: grid;
+  justify-content:left;
+  align-content: flex-start;
+  /* min-width: 22rem; */
+  padding: 1rem;
+}
+
+#title h1 {
+  color: #f5f5f5D9;
+  /* opacity: 0.85; */
+  font-family: 'Quicksand', sans-serif;
+  font-size: calc(2.25rem + (3.75 - 2.25) * ((100vw - 300px) / (1600-300)));
+  font-weight: 300;
+  text-align: left;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  min-height: 9rem;
+  max-height: 25rem;
+  height: auto;
+}
+
+#title p {
+  width: 100%;
+  color: #f5f5f5;
+  opacity: 0.85;
+  font-size: calc(0.95rem + (1.15 - 0.95) * ((100vw - 300px) / (1600-300)));
+}
+
+#logocont {
+  display: flex;
+  align-items: flex-start;
+  grid-area: 1/2/2/3;
+  /* max-width: 25rem; */
+  min-width: 7rem;
+  padding: 1rem;
+  justify-self: center;
+  overflow: hidden;
+  padding: 5%;
+}  
+
+#logocont img {
+  display: block;
+  border-radius: 50%;
+  max-width: 100%;
+  max-height: 23rem;
+  min-width: 6rem;
+  min-height: 6rem;
+  height: auto;
+}
+
+
+.aboutme {
+  animation: fadein 6s;
+  -webkit-animation: fadein 6s;
+  -moz-animation: fadein 6s;
+  -o-animation: fadein 6s;
+  -ms-animation: fadein 6s;
+  background-color: #ffffffd9;
+  grid-area: 3/1/8/3;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 1rem;
+}
+
+p {
+  font-family: 'Quicksand', sans-serif;
+  padding: 0.75rem 1rem;
+  font-size: calc(0.95rem + (1.15 - 0.95) * ((100vw - 300px) / (1600-300)));
+}
+
+
+.title2 {
+color: #000;
+font-family: 'Quicksand', sans-serif;
+padding: 0.5em 1rem;
+font-size:calc(1.15rem + (1.45 - 1.15) * ((100vw - 300px) / (1600-300)));
+font-weight: 500;
+}
+
+.title3 {
+color: #6F7E6E;
+font-family: 'Quicksand', sans-serif;
+font-size:calc(30px + (40 - 30) * ((100vw - 300px) / (1600-300)));
+padding-bottom: 7px;
+}
+
+footer {
+  /* margin: 1.25rem .75rem; */
+  height: auto;
+  padding: 1.5rem 1rem;
+  font-weight: 500;
+  text-align: right;
+  align-self: center;
+}
+
+.linkedin {
+  font-family: comfortaa;
+  color: #000;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 480px),(orientation: portrait) {
+  .darkgreen {
+    grid-template: 1fr 1fr / 1fr;
+  }
+
+  #logocont {
+    grid-area: 2/1/3/2;
+  } 
+}
+
+@media only screen and (max-width: 480px) {
+
+  #menuitems a {
+    background-color: #f5f5f500;
+  } 
+
+  #nav {
+    background-attachment:scroll;
+    }
+
+}
+
