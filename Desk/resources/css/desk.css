@@ -122,7 +122,7 @@ img#logo {
   padding: 18px;
 }
 
-#mobilelogo1 {
+#mobilelogo {
   display: none;
 }
 
@@ -143,14 +143,14 @@ img#logo {
   }
 
   
-  #mobilelogo1 {
+  /* #mobilelogo1 {
     display:inline;
     float:inline-end;
     border-radius: 0%;
     margin-bottom: 0;
     width: auto;
     height: 95px;
-  }
+  } */
 
   #TBD {
     display: none;
@@ -175,42 +175,43 @@ img#logo {
   }
 }
 
-@media only screen and (max-width: 615px) {
+@media only screen and (max-width: 680px) {
   #nav {
-    background-image: url(../images/trflogomobile5.png);
-    border-bottom: 1px solid #fff;
-    border-top: 1px solid #fff;
-    background-repeat: none;
-    background-size: cover;
-    height: 140px;
-    background-position: left;
-    align-items:end;
-
+    height: 175px;
   }
-
+  
   #nav ul {
     justify-content:right;
-  }
-
-  #nav li a {
-    /* background-color: #f5f5f577;*/
-  }
-
-  #nav ul {
-    justify-content:right;
-    width: 45%;
+    width: 40%;
   }
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 460px) {
   #nav {
-
+    background-image: none;
+    background-color: #fff;
+    border: none;
 
   }
 
+  #menuitems {
+    display: none;
+  }
+
+  #mobilelogo {
+    display: block;
+    width: 100%;
+    border-radius: 0%;
+    height: auto;
+    margin: 0;
+  }
+
   #nav ul {
-    justify-content:right;
-    width: 45%;
+    justify-content:center;
+  }
+
+  #nav li a {
+    color: #3d3d3d;
   }
 }
 
