@@ -132,6 +132,10 @@ img#logo {
   align-content: center;
 }
 
+#mobilelogo {
+  display: none;
+}
+
 @media only screen and (max-width: 500px) {
   #nav {
     background-color: #fff;
@@ -148,6 +152,7 @@ img#logo {
   }
 
   #mobilelogo {
+    display: block;
     border-radius: 0%;
     width: 100%;
     height: auto;
@@ -274,7 +279,7 @@ img {
   min-width: 20px;
 }
 
-@media only screen and (max-width: 500px)  {
+@media only screen and (max-width: 940px)  {
   .body {
     display: grid;
     grid-template: 50px 1fr 1fr / 1fr;
