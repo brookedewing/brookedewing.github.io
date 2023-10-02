@@ -5,15 +5,11 @@
   padding: 0;
   overflow-x:hidden;
   overflow-y: visible;
-  /* border-top: 1px solid blue;
-  border-bottom: 1px solid red;
-  border-left: 1px solid pink;
-  border-right: 1px solid greenyellow; */
   /* border: 1px solid red; */
 }
 
 html {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 @keyframes fadein {
@@ -43,7 +39,7 @@ html {
 
 #banner {
   display: grid;
-  grid-template: 6rem 3fr repeat(5,1fr) 4rem/1fr 1fr;
+  grid-template: 6rem 2.5fr repeat(2,1fr) 4rem/1fr 1fr;
   width: 100%;
   /* background-color: #30362f; */
   /* justify-content: space-around; */
@@ -52,7 +48,7 @@ html {
 }
 
 #nav {
-  grid-area: 1/1/9/3;
+  grid-area: 1/1/7/3;
   width: 100%;
   /* position: sticky; */
   /* z-index: 10; */
@@ -178,13 +174,26 @@ html {
   -o-animation: fadein 6s;
   -ms-animation: fadein 6s;
   background-color: #ffffffd9;
-  grid-area: 3/1/8/3;
+  grid-area: 3/1/5/3;
   margin-left: 5%;
   margin-right: 5%;
   padding: 1rem;
 }
 
-p {
+/* .contact {
+  animation: fadein 6s;
+  -webkit-animation: fadein 6s;
+  -moz-animation: fadein 6s;
+  -o-animation: fadein 6s;
+  -ms-animation: fadein 6s;
+  background-color: #ffffffd9;
+  grid-area: 5/1/6/3;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 1rem;
+} */
+
+p, ul {
   font-family: 'Quicksand', sans-serif;
   padding: 0.75rem 1rem;
   font-size: calc(0.95rem + (1.15 - 0.95) * ((100vw - 300px) / (1600-300)));
@@ -199,11 +208,9 @@ font-size:calc(1.15rem + (1.45 - 1.15) * ((100vw - 300px) / (1600-300)));
 font-weight: 500;
 }
 
-.title3 {
-color: #6F7E6E;
-font-family: 'Quicksand', sans-serif;
-font-size:calc(30px + (40 - 30) * ((100vw - 300px) / (1600-300)));
-padding-bottom: 7px;
+a {
+color: #3d503b;
+
 }
 
 footer {
@@ -222,14 +229,37 @@ footer {
 }
 
 @media only screen and (max-width: 480px),(orientation: portrait) {
+  
+  #banner {
+    grid-template: 6rem .58fr 1fr 4rem/1fr;
+  }
+
+  #nav {
+    grid-area: 1/1/5/2;
+  }
+
+  #menuitems {
+    grid-area: 1/1/2/2;
+  }
+
   .darkgreen {
+    grid-area: 2/1/3/2;
     grid-template: 1fr 1fr / 1fr;
+  }
+
+  #title {
+    grid-area: 1/1/2/2;
   }
 
   #logocont {
     grid-area: 2/1/3/2;
+  }
+
+  .aboutme {
+    grid-area: 3/1/4/2;
   } 
 }
+
 
 @media only screen and (max-width: 480px) {
 
@@ -242,4 +272,3 @@ footer {
     }
 
 }
-
