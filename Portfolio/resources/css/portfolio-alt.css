@@ -228,10 +228,31 @@ footer {
   text-decoration: none;
 }
 
-@media only screen and (max-width: 780px),(orientation: portrait) {
+@media only screen and (min-width: 1000px) {
 
   #banner {
-    grid-template: 6rem .85fr 1fr 4rem/1fr;
+    grid-template: 6rem 1fr 1fr .55fr 4rem/1fr 1fr;
+  }
+
+  #menuitems {
+    margin-right: 15%;
+  }
+
+  .darkgreen {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  .aboutme {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+
+  #banner {
+    grid-template: 6rem .75fr 1fr 4rem/1fr;
   }
 
   .darkgreen {
@@ -248,10 +269,18 @@ footer {
   
 }
 
-@media only screen and (max-width: 480px),(orientation: portrait) {
-  
+
+@media only screen and (max-width: 750px) {
+
   #banner {
-    grid-template: 6rem .58fr 1fr 4rem/1fr;
+    grid-template: 6rem .65fr 1fr 4rem/1fr;
+  }
+
+}
+
+@media only screen and (max-width: 655px) {
+  #banner {
+    grid-template: 6rem .85fr 1fr 4rem/1fr;
   }
 
   #nav {
@@ -262,8 +291,85 @@ footer {
     grid-area: 1/1/2/2;
   }
 
+  #title h1 {
+    min-height: 4rem;
+  }
+  
+
   .darkgreen {
     grid-area: 2/1/3/2;
+    grid-template: .55fr 1fr / 1fr;
+  }
+
+  #title {
+    grid-area: 1/1/2/2;
+  }
+
+  #logocont {
+    grid-area: 2/1/3/2;
+  }
+
+  .aboutme {
+    grid-area: 3/1/4/2;
+  } 
+  
+  #title {
+    padding-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  
+  #banner {
+    grid-template: 6rem .75fr 1fr 4rem/1fr;
+  }
+
+  #title h1 {
+    min-height: 2.5rem;
+  }
+
+  #logocont {
+    padding: 1%;
+    max-width: 78%;
+  }  
+
+  .darkgreen {
+    grid-template: .6fr 1fr / 1fr;
+  }
+
+}
+
+
+ @media only screen and (max-width: 500px) {
+  
+  #banner {
+    grid-template: 6rem .65fr 1fr 4rem/1fr;
+  }
+
+  .darkgreen {
+    grid-template: 1fr 1fr / 1fr;
+  }
+
+  #title {
+    grid-area: 1/1/2/2;
+  }
+
+  #logocont {
+    grid-area: 2/1/3/2;
+  }
+
+  .aboutme {
+    grid-area: 3/1/4/2;
+  } 
+}
+
+@media only screen and (max-width: 415px) {
+  
+  #banner {
+    grid-template: 6rem .5fr 1fr 4rem/1fr;
+  }
+
+  .darkgreen {
     grid-template: 1fr 1fr / 1fr;
   }
 
